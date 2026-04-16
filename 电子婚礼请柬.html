@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head><meta content="default-src 'none'; style-src * 'unsafe-inline'; script-src * 'unsafe-inline'; img-src * data: blob:; font-src * data:; media-src * data: blob:; connect-src 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'" http-equiv="Content-Security-Policy"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>蔡占元 &amp; 李景文 婚礼请柬</title>
+<script src="https://image.uc.cn/s/uae/g/3n/mos-production/0915/3.4.17.js"></script>
+<script src="https://image.uc.cn/s/uae/g/3n/mos-production/fontawesome-free-7.1.0-web/js/all.min.js"></script>
+<link href="https://image.uc.cn/s/uae/g/3n/mos-production/fontawesome-free-7.1.0-web/css/fontawesome.min.css" rel="stylesheet"/>
+<script src="https://image.uc.cn/s/uae/g/3n/mos-production/cdn.jsdelivr.net/npm/canvas-confetti/1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wedding-red': '#D9381E',
+                        'wedding-gold': '#D4AF37',
+                        'wedding-bg': '#FFF9F5',
+                        'wedding-text': '#4A4A4A'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', 'STSong', 'serif'],
+                        sans: ['"Noto Sans SC"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* 全局样式微调 */
+        body {
+            background-color: #FFF9F5;
+            color: #4A4A4A;
+            font-family: 'Noto Serif SC', serif;
+            overflow-x: hidden;
+        }
+
+        /* 装饰性背景纹理 */
+        .bg-pattern {
+            background-image: radial-gradient(#D9381E 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+
+        /* 图片悬停效果 */
+        .photo-card {
+            transition: all 0.5s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .photo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF9F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D9381E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b92d16;
+        }
+
+        /* 倒计时数字样式 */
+        .countdown-item {
+            background: linear-gradient(135deg, #D9381E 0%, #b92d16 100%);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(217, 56, 30, 0.3);
+        }
+    </style>
+</head>
+<body class="relative">
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<header class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-gradient-to-b from-red-50 to-white">
+<div class="absolute w-64 h-64 md:w-96 md:h-96 border-2 border-wedding-red/20 rounded-full animate-pulse-slow"></div>
+<div class="absolute w-80 h-80 md:w-[500px] md:h-[500px] border border-wedding-gold/30 rounded-full"></div>
+<div class="z-10 animate-fade-in-up">
+<p class="text-wedding-red text-xl md:text-2xl mb-4 tracking-[0.5em] font-bold">WEDDING INVITATION</p>
+<div class="text-6xl md:text-8xl text-wedding-red my-8 font-serif drop-shadow-sm">囍</div>
+<h1 class="text-4xl md:text-6xl text-wedding-text font-serif mb-4">
+<span class="block text-2xl md:text-3xl text-gray-500 mb-2">新郎</span>
+                蔡占元
+            </h1>
+<div class="text-3xl md:text-4xl text-wedding-gold my-4 font-serif">&amp;</div>
+<h1 class="text-4xl md:text-6xl text-wedding-text font-serif mb-8">
+<span class="block text-2xl md:text-3xl text-gray-500 mb-2">新娘</span>
+                李景文
+            </h1>
+<p class="text-lg md:text-xl text-gray-600 mt-8 tracking-widest">我们结婚啦</p>
+<p class="text-wedding-red font-bold mt-2 text-xl">2026.05.02</p>
+</div>
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-wedding-red">
+<i class="fas fa-chevron-down text-2xl"></i>
+</div>
+</header>
+<main class="relative z-10 max-w-4xl mx-auto px-4 py-16 space-y-24">
+<section class="text-center">
+<h2 class="text-3xl font-serif text-wedding-text mb-8 border-b-2 border-wedding-red/20 inline-block pb-2">婚礼倒计时</h2>
+<div class="flex justify-center gap-4 md:gap-8 font-sans" id="countdown">
+</div>
+<p class="mt-6 text-gray-500 text-sm">距离幸福时刻还有</p>
+</section>
+<section class="bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-sm border border-wedding-gold/20 text-center leading-loose">
+<p class="text-lg md:text-xl text-gray-700 font-serif">
+                两姓联姻，一堂缔约<br/>
+                良缘永结，匹配同称<br/>
+                看此日桃花灼灼，宜室宜家<br/>
+                卜他年瓜瓞绵绵，尔昌尔炽<br/>
+<br/>
+                我们要结婚了<br/>
+                诚挚邀请您见证我们的幸福时刻
+            </p>
+</section>
+<section>
+<h2 class="text-3xl font-serif text-wedding-text mb-10 text-center border-b-2 border-wedding-red/20 inline-block pb-2 w-full">美好瞬间</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="photo-card rounded-xl overflow-hidden aspect-[3/4] group relative">
+<img alt="Wedding Photo 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://agent.qianwen.com/mos/d5bd7c0eb2ac467cac66e21fc7252a63/2b3381b4fc3b4f4e217f187133a5abb7"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="photo-card rounded-xl overflow-hidden aspect-[3/4] group relative">
+<img alt="Wedding Photo 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://agent.qianwen.com/mos/d5bd7c0eb2ac467cac66e21fc7252a63/f10e8ddc578c7747097542d2fe30e34a"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="photo-card rounded-xl overflow-hidden aspect-[3/4] group relative">
+<img alt="Wedding Photo 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://agent.qianwen.com/mos/d5bd7c0eb2ac467cac66e21fc7252a63/c9213bed3f06a7da3211d378f9934987"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="photo-card rounded-xl overflow-hidden aspect-[3/4] group relative">
+<img alt="Wedding Photo 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://agent.qianwen.com/mos/d5bd7c0eb2ac467cac66e21fc7252a63/b2e631d75d86d3684e9354d342d5d704"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="photo-card rounded-xl overflow-hidden aspect-[3/4] group relative md:col-span-2 lg:col-span-1">
+<img alt="Wedding Photo 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://agent.qianwen.com/mos/d5bd7c0eb2ac467cac66e21fc7252a63/4881f2f59f2ff0ee82f536b36b2b532d"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+</section>
+<section class="bg-white p-8 md:p-12 rounded-2xl shadow-lg border-t-4 border-wedding-red">
+<h2 class="text-3xl font-serif text-wedding-text mb-10 text-center">婚礼详情</h2>
+<div class="grid md:grid-cols-2 gap-10">
+<div class="flex flex-col items-center text-center p-6 bg-red-50 rounded-xl">
+<div class="w-16 h-16 bg-wedding-red text-white rounded-full flex items-center justify-center text-2xl mb-4 shadow-md">
+<i class="far fa-clock"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">婚礼时间</h3>
+<p class="text-gray-600 font-serif text-lg">2026年05月02日 (星期六)</p>
+<p class="text-wedding-red font-bold text-xl mt-2">中午 11:30 开始</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-red-50 rounded-xl">
+<div class="w-16 h-16 bg-wedding-red text-white rounded-full flex items-center justify-center text-2xl mb-4 shadow-md">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">婚礼地点</h3>
+<p class="text-gray-600 font-serif text-lg">福临门大酒店一楼大厅</p>
+<p class="text-gray-500 text-sm mt-2">徐州市沛县大屯街道南京路</p>
+</div>
+</div>
+<div class="mt-10 text-center">
+<a class="inline-block border-2 border-wedding-red text-wedding-red hover:bg-wedding-red hover:text-white px-8 py-3 rounded-full transition-colors duration-300 font-bold" href="https://map.baidu.com/search/福临门大酒店/@12959225.34,3742365.12,13z" target="_blank">
+<i class="fas fa-location-arrow mr-2"></i>查看地图导航
+                </a>
+</div>
+</section>
+<section class="text-center pb-10">
+<h2 class="text-3xl font-serif text-wedding-text mb-8">联系我们</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="flex items-center justify-center bg-white border border-gray-200 px-8 py-4 rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="tel:18829570517">
+<div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<i class="fas fa-phone"></i>
+</div>
+<div class="text-left">
+<p class="text-sm text-gray-500">新郎 蔡先生</p>
+<p class="text-lg font-bold text-gray-800">188-2957-0517</p>
+</div>
+</a>
+<a class="flex items-center justify-center bg-white border border-gray-200 px-8 py-4 rounded-xl shadow-sm hover:shadow-md transition-shadow group" href="tel:18802689343">
+<div class="w-10 h-10 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mr-4 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+<i class="fas fa-phone"></i>
+</div>
+<div class="text-left">
+<p class="text-sm text-gray-500">新娘 李小姐</p>
+<p class="text-lg font-bold text-gray-800">188-0268-9343</p>
+</div>
+</a>
+</div>
+</section>
+</main>
+<footer class="bg-wedding-red text-white py-12 text-center relative z-10">
+<div class="text-4xl mb-4">囍</div>
+<p class="font-serif text-xl mb-2">蔡占元 &amp; 李景文</p>
+<p class="text-white/80 text-sm">感谢您的祝福与光临</p>
+<p class="text-white/60 text-xs mt-8">© 2026 Wedding Invitation</p>
+</footer>
+<script>
+        // 倒计时逻辑
+        function updateCountdown() {
+            const weddingDate = new Date('2026-05-02T11:30:00').getTime();
+            const now = new Date().getTime();
+            const gap = weddingDate - now;
+
+            const countdownContainer = document.getElementById('countdown');
+
+            if (gap < 0) {
+                countdownContainer.innerHTML = '<div class="text-2xl font-bold text-wedding-red">婚礼已圆满结束，感谢祝福！</div>';
+                return;
+            }
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const d = Math.floor(gap / day);
+            const h = Math.floor((gap % day) / hour);
+            const m = Math.floor((gap % hour) / minute);
+            const s = Math.floor((gap % minute) / second);
+
+            countdownContainer.innerHTML = `
+                <div class="countdown-item p-4 min-w-[80px]">
+                    <div class="text-3xl md:text-4xl font-bold">${d}</div>
+                    <div class="text-xs md:text-sm opacity-80">天</div>
+                </div>
+                <div class="countdown-item p-4 min-w-[80px]">
+                    <div class="text-3xl md:text-4xl font-bold">${h}</div>
+                    <div class="text-xs md:text-sm opacity-80">时</div>
+                </div>
+                <div class="countdown-item p-4 min-w-[80px]">
+                    <div class="text-3xl md:text-4xl font-bold">${m}</div>
+                    <div class="text-xs md:text-sm opacity-80">分</div>
+                </div>
+                <div class="countdown-item p-4 min-w-[80px]">
+                    <div class="text-3xl md:text-4xl font-bold">${s}</div>
+                    <div class="text-xs md:text-sm opacity-80">秒</div>
+                </div>
+            `;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // 初始化调用
+
+        // 页面加载时的五彩纸屑效果
+        window.onload = function() {
+            // 初始爆发
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                var particleCount = 50 * (timeLeft / duration);
+                
+                // 两个发射源，模拟左右两边
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        };
+    </script>
+</body>
+</html>
